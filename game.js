@@ -14,18 +14,29 @@ let angle = 0;
 // }, false);
 
 
-const options = {
-    enableHighAccuracy: true,
-};
+// const options = {
+//     enableHighAccuracy: true,
+// };
 
-function success(pos){
-    let crd = pos.coords.heading;
-    console.log(crd);
-    angle = crd;
-};
+// function success(pos){
+//     let crd = pos.coords.heading;
+//     console.log(crd);
+//     angle = crd;
+// };
 
-function error(err) {
-    console.log("error yo");
-};
+// function error(err) {
+//     console.log("error yo");
+// };
 
-navigator.geolocation.watchPosition(success, error, options);
+// navigator.geolocation.watchPosition(success, error, options);
+
+if (window.DeviceOrientationEvent) {
+    window.addEventListener('deviceorientation', function(eventData){
+
+        if(event.webkitCompassHeading){
+            angle = event.webkitCompassHeading;
+            console.log("Angle: " + angle);
+        }
+        else angle = event.alpha;
+    });
+};
