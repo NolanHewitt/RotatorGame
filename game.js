@@ -1,9 +1,9 @@
-// let angle = 0;
+let angle = 0;
 
 
-//     setInterval(function(){
-//         $('#dot').css('transform','rotate(' + angle + 'deg)');
-//      }, 17);
+    setInterval(function(){
+        $('#dot').css('transform','rotate(' + angle + 'deg)');
+     }, 17);
 
 
 
@@ -16,4 +16,5 @@
 
 navigator.geolocation.watchPosition((data) => {
     console.log(data);
+    angle = data.coords.heading;
 });
