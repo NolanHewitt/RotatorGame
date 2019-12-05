@@ -17,4 +17,5 @@ let angle = 0;
 navigator.geolocation.watchPosition((data) => {
     console.log(data);
     angle = data.coords.heading;
+    document.getElementById("data").innerHTML=("Degrees: " + Math.floor(angle) + "°");
 });
