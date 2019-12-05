@@ -14,8 +14,18 @@ let angle = 0;
 // }, false);
 
 
-navigator.geolocation.watchPosition((data) => {
-    console.log(data.coords.heading);
-    angle = data.coords.heading;
-    document.getElementById("data").innerHTML=("Degrees: " + Math.floor(angle) + "°");
-});
+const options = {
+    enableHighAccuracy: true,
+};
+
+function success(pos){
+    let crd = pos.coords.heading;
+    console.log(crd);
+    angle = crd;
+};
+
+function error(err) {
+    console.log("error yo");
+};
+
+navigator.geolocation.watchPosition(success, error, options);
