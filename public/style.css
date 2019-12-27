@@ -108,7 +108,7 @@ html, body {
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  margin-top: 375%;
+  margin-top: 300%;
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
   border-radius: 5px; 
