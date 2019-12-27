@@ -74,7 +74,7 @@ html, body {
   background: greenyellow;
   position:fixed; /*it can be fixed too*/
       left:0; right:0;
-      top:10%; bottom:0;
+      top:5%; bottom:0;
   margin: auto;
   margin-top: 50%;
 }
@@ -100,7 +100,7 @@ html, body {
 }
 
 .slidecontainer {
-  width: 33%; /* Width of the outside container */
+  width: 40%; /* Width of the outside container */
   margin: auto;
 }
 
@@ -108,7 +108,7 @@ html, body {
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  margin-top: 470%;
+  margin-top: 450%;
   width: 100%; /* Full-width */
   height: 15px; /* Specified height */
   border-radius: 5px; 
