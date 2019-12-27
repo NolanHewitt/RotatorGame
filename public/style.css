@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.dot{
+  overflow: hidden;
+  width: 800px;
+  height: 800px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 25px solid red;
+  display: inline-block;
+  position:fixed; /*it can be fixed too*/
+      left:0; right:0;
+      top:0; bottom:0;
+      margin:auto;
+}
+
+#dot {
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+#dot1 {
+  transform: rotate(67.5deg);
+  opacity: 0;
+}
+
+#dot2 {
+  transform: rotate(157.5deg);
+  opacity: 0;
+}
+
+#dot3 {
+  transform: rotate(247.5deg);
+  opacity: 0;
+}
+
+#dot4 {
+  transform: rotate(337.5deg);
+  opacity: 0;
+}
+
+#dot5 {
+  transform: rotate(22.5deg);
+  opacity: 0;
+}
+
+#dot6 {
+  transform: rotate(112.5deg);
+  opacity: 0;
+}
+
+#dot7 {
+  transform: rotate(202.5deg);
+  opacity: 0;
+}
+
+#dot8 {
+  transform: rotate(292.5deg);
+  opacity: 0;
+}
+
+#start {
+  display:block;
+  z-index: 2;
+  cursor: pointer;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 40px;
+  background: greenyellow;
+  position:fixed; /*it can be fixed too*/
+      left:0; right:0;
+      top:15%; bottom:0;
+  margin: auto;
+  margin-top: 50%;
+}
+
+#pointer {
+  width: 7%;
+  height: 40%;
+  margin-top: -4%;
+  margin-left: 46.5%;
+  background: red;
+  display: inline-block;
+  position:absolute;
+}
+
+.pointerGame {
+  width: 8%;
+  height: 30%;
+  margin-top: -4%;
+  margin-left: 46%;
+  background: blue;
+  display: inline-block;
+  position:absolute;
+}
+
+.slidecontainer {
+  width: 33%; /* Width of the outside container */
+  margin: auto;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  margin-top: 480%;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 5px; 
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%; 
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%; 
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}

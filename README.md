@@ -1,3 +1,2 @@
-# RotatorGame
-
-https://nolanhewitt.github.io/RotatorGame/index.html
+# zombieclickergame
+https://zombieclickergame.herokuapp.com/
