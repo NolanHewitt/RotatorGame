@@ -3,6 +3,14 @@ html, body {
   width: 100%;
 }
 
+#score {
+  font-size: 60px;
+  margin-left: 40%;
+  margin-top: 25%;
+  display: block;
+  position:fixed;
+}
+
 .dot{
   overflow: hidden;
   width: 800px;
@@ -101,14 +109,16 @@ html, body {
 
 .slidecontainer {
   width: 40%; /* Width of the outside container */
-  margin: auto;
+  margin-left: 29%;
+  margin-top: 135%;
+  position: fixed;
+  /*position: fixed;*/
 }
 
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  margin-top: 325%;
   width: 100%; /* Full-width */
   height: 50px; /* Specified height */
   border-radius: 5px; 

@@ -90,6 +90,7 @@ function gameTimer() {
     setTimeout(function(){
          if (detector === true){
             points = points + 1;
+            document.getElementById("score").innerHTML = "Score: " + points;
             console.log("Points: " + points);
          }
          else if (detector === false){
