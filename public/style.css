@@ -11,6 +11,24 @@ html, body {
   position:fixed;
 }
 
+.redX {
+  position: fixed;
+  width: 20%;
+  margin-top: 3%;
+}
+
+#redX1 {
+  margin-left: 7.5%;
+}
+
+#redX2 {
+  margin-left: 40%;
+}
+
+#redX3 {
+  margin-left: 72.5%;
+}
+
 .dot{
   overflow: hidden;
   width: 800px;
@@ -120,7 +138,7 @@ html, body {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 50px; /* Specified height */
+  height: 75px; /* Specified height */
   border-radius: 5px; 
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
@@ -138,8 +156,8 @@ html, body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 45px; /* Set a specific slider handle width */
-  height: 45px; /* Slider handle height */
+  width: 70px; /* Set a specific slider handle width */
+  height: 70px; /* Slider handle height */
   border-radius: 50%; 
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */

@@ -21,6 +21,8 @@ router.get("*",function(req,res){
 
 app.use('*/style.css',express.static('public/style.css'));
 app.use('*/script.js',express.static('public/script.js'));
+app.use('*/images',express.static('public/images'));
+app.use('*/sounds',express.static('public/sounds'));
 app.use("/",router);
 
 app.listen(process.env.PORT || 3000,function(){
