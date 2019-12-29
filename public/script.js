@@ -96,6 +96,18 @@ function gameTimer() {
          else if (detector === false){
              mistakes = mistakes - 1;
              console.log("Mistakes left: " + mistakes);
+             if (mistakes === 1){
+                document.getElementById("redX1").style.display = "block";
+             }
+             else if (mistakes === 2){
+                document.getElementById("redX2").style.display = "block";
+             }
+             else if (mistakes === 3){
+                document.getElementById("redX3").style.display = "block";
+             }
+             else if (mistakes === 4){
+                window.location='lose';
+             };
          };
          document.getElementById("dot" + rng).style.opacity = "0";
             angleTarget = 1000;

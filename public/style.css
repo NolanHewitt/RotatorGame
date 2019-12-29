@@ -19,14 +19,17 @@ html, body {
 
 #redX1 {
   margin-left: 6.5%;
+  display: none;
 }
 
 #redX2 {
   margin-left: 39%;
+  display: none;
 }
 
 #redX3 {
   margin-left: 71.5%;
+  display: none;
 }
 
 .dot{
