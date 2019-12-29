@@ -96,16 +96,16 @@ function gameTimer() {
          else if (detector === false){
              mistakes = mistakes - 1;
              console.log("Mistakes left: " + mistakes);
-             if (mistakes === 1){
+             if (mistakes === 2){
                 document.getElementById("redX1").style.display = "block";
              }
-             else if (mistakes === 2){
+             else if (mistakes === 1){
                 document.getElementById("redX2").style.display = "block";
              }
-             else if (mistakes === 3){
+             else if (mistakes === 0){
                 document.getElementById("redX3").style.display = "block";
              }
-             else if (mistakes === 4){
+             else if (mistakes === -1){
                 window.location='lose';
              };
          };
