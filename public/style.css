@@ -169,7 +169,7 @@ display: block;
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 75px; /* Specified height */
+  height: 95px; /* Specified height */
   border-radius: 5px; 
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
@@ -187,8 +187,8 @@ display: block;
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 70px; /* Set a specific slider handle width */
-  height: 70px; /* Slider handle height */
+  width: 88.67px; /* Set a specific slider handle width */
+  height: 88.67px; /* Slider handle height */
   border-radius: 50%; 
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
