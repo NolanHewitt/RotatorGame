@@ -1,5 +1,6 @@
 const slider = document.getElementById("myRange");
 const pointer = document.getElementById("dot");
+const stargate = document.getElementById("stargate");
 let angle = 0;
 let angleTarget = 1000;
 let angleForgivness = 10;
@@ -14,17 +15,32 @@ let waiting = 2000;
 
 slider.oninput = function() {
   pointer.style.transform = "rotate(" + this.value + "deg)";
+  stargate.style.transform = "rotate(" + this.value + "deg)";
   angle = this.value;
   console.log(angle);
 };
 
 setInterval(function(){
     if (angle >= angleMin && angle <= angleMax) {
-        document.getElementById("pointer").style.background = "greenyellow";
+        document.getElementById("dota1").style.background = "greenyellow";
+        document.getElementById("dota2").style.background = "greenyellow";
+        document.getElementById("dota3").style.background = "greenyellow";
+        document.getElementById("dota4").style.background = "greenyellow";
+        document.getElementById("dota5").style.background = "greenyellow";
+        document.getElementById("dota6").style.background = "greenyellow";
+        document.getElementById("dota7").style.background = "greenyellow";
+        document.getElementById("dota8").style.background = "greenyellow";
         detector = true;
       }
       else {
-        document.getElementById("pointer").style.background = "red";
+        document.getElementById("dota1").style.background = "red";
+        document.getElementById("dota2").style.background = "red";
+        document.getElementById("dota3").style.background = "red";
+        document.getElementById("dota4").style.background = "red";
+        document.getElementById("dota5").style.background = "red";
+        document.getElementById("dota6").style.background = "red";
+        document.getElementById("dota7").style.background = "red";
+        document.getElementById("dota8").style.background = "red";
         detector = false;
       };
     }, 16.5);
