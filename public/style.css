@@ -172,14 +172,21 @@ display: block;
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid transparent;
   font-size: 40px;
-  background: greenyellow;
+  background: transparent;
   position:fixed; /*it can be fixed too*/
       left:0; right:0;
       top:5%; bottom:0;
   margin: auto;
   margin-top: 50%;
+}
+
+#sun {
+  width: 34%;
+  position: fixed;
+  margin-top: 54%;
+  margin-left: 32.5%;
 }
 
 #pointer {
@@ -219,16 +226,16 @@ display: block;
   width: 100%; /* Full-width */
   height: 95px; /* Specified height */
   border-radius: 5px; 
-  background: #d3d3d3; /* Grey background */
+  background: gray; /* Grey background */
   outline: none; /* Remove outline */
-  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  opacity: 0.6; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
 }
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: .7; /* Fully shown on mouse-over */
+  opacity: .9; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
@@ -238,7 +245,7 @@ display: block;
   width: 88.67px; /* Set a specific slider handle width */
   height: 88.67px; /* Slider handle height */
   border-radius: 50%; 
-  background: #4CAF50; /* Green background */
+  background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
