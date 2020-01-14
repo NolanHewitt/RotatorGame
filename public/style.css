@@ -251,9 +251,9 @@ display: block;
 }
 
 .slider::-moz-range-thumb {
-  width: 45px; /* Set a specific slider handle width */
-  height: 45px; /* Slider handle height */
+  width: 88.67px; /* Set a specific slider handle width */
+  height: 88.67px; /* Slider handle height */
   border-radius: 50%; 
-  background: #4CAF50; /* Green background */
+  background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
