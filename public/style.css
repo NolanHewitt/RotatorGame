@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   background-image: url(./images/stars.jpg);
+  position: fixed;
 }
 
 #stargate{
@@ -119,7 +120,7 @@ display: block;
 
 .supernova {
   width: 12.5%;
-  display: block;
+  display: none;
   position: fixed;
   z-index: 5;
 }
