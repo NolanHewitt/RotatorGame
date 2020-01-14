@@ -33,9 +33,10 @@ display: block;
   font-size: 60px;
   margin-left: 40%;
   margin-top: 65%;
-  display: block;
+  display: none;
   position:fixed;
-  color: red;
+  color: royalblue;
+  z-index: 5;
 }
 
 .redX {

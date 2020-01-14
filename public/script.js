@@ -121,6 +121,7 @@ function gameTimer() {
 
   function waitTimer() {
     document.getElementById("start").style.display = "none";
+    document.getElementById("score").style.display = "block";
     console.log("wait timer started");
     setTimeout(function(){
         reaction = (2.13 * (points**2)) + (-153.265 * points) + 2845;
