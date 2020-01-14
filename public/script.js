@@ -22,25 +22,11 @@ slider.oninput = function() {
 
 setInterval(function(){
     if (angle >= angleMin && angle <= angleMax) {
-        document.getElementById("dota1").style.background = "greenyellow";
-        document.getElementById("dota2").style.background = "greenyellow";
-        document.getElementById("dota3").style.background = "greenyellow";
-        document.getElementById("dota4").style.background = "greenyellow";
-        document.getElementById("dota5").style.background = "greenyellow";
-        document.getElementById("dota6").style.background = "greenyellow";
-        document.getElementById("dota7").style.background = "greenyellow";
-        document.getElementById("dota8").style.background = "greenyellow";
+        document.getElementById("triangle").style.borderColor = "transparent transparent greenyellow transparent";
         detector = true;
       }
       else {
-        document.getElementById("dota1").style.background = "red";
-        document.getElementById("dota2").style.background = "red";
-        document.getElementById("dota3").style.background = "red";
-        document.getElementById("dota4").style.background = "red";
-        document.getElementById("dota5").style.background = "red";
-        document.getElementById("dota6").style.background = "red";
-        document.getElementById("dota7").style.background = "red";
-        document.getElementById("dota8").style.background = "red";
+        document.getElementById("triangle").style.borderColor = "transparent transparent red transparent";
         detector = false;
       };
     }, 16.5);
@@ -50,49 +36,49 @@ function startGame() {
     console.log("RNG: " + rng);
 
     if (rng === 1){
-        document.getElementById("dot1").style.opacity = "1";
+        document.getElementById("nova1").style.display = "block";
         angleTarget = 67.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 2){
-        document.getElementById("dot2").style.opacity = "1";
+        document.getElementById("nova2").style.display = "block";
         angleTarget = 157.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 3){
-        document.getElementById("dot3").style.opacity = "1";
+        document.getElementById("nova3").style.display = "block";
         angleTarget = 247.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 4){
-        document.getElementById("dot4").style.opacity = "1";
+        document.getElementById("nova4").style.display = "block";
         angleTarget = 337.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 5){
-        document.getElementById("dot5").style.opacity = "1";
+        document.getElementById("nova5").style.display = "block";
         angleTarget = 22.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 6){
-        document.getElementById("dot6").style.opacity = "1";
+        document.getElementById("nova6").style.display = "block";
         angleTarget = 112.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 7){
-        document.getElementById("dot7").style.opacity = "1";
+        document.getElementById("nova7").style.display = "block";
         angleTarget = 202.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
     }
     else if (rng === 8){
-        document.getElementById("dot8").style.opacity = "1";
+        document.getElementById("nova8").style.display = "block";
         angleTarget = 292.5;
         angleMin = angleTarget - angleForgivness;
         angleMax = angleTarget + angleForgivness;
@@ -125,7 +111,7 @@ function gameTimer() {
                 window.location='lose';
              };
          };
-         document.getElementById("dot" + rng).style.opacity = "0";
+         document.getElementById("nova" + rng).style.display = "none";
             angleTarget = 1000;
             angleMin = angleTarget - angleForgivness;
             angleMax = angleTarget + angleForgivness;

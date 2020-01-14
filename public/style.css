@@ -22,7 +22,7 @@ height: 0;
 border-style: solid;
 border-width: 0 20px 50px 20px;
 transform: rotate(180deg);
-border-color: transparent transparent #ff3c00 transparent;
+border-color: transparent transparent red transparent;
 margin-top: 1.5%;
 margin-left: 47.6%;
 display: block;
@@ -117,6 +117,53 @@ display: block;
   opacity: 0;
 }
 
+.supernova {
+  width: 12.5%;
+  display: none;
+  position: fixed;
+  z-index: 5;
+}
+
+#nova5 {
+  margin-top: 60%;
+  margin-left: 52%;
+}
+
+#nova1 {
+  margin-top: 72.75%;
+  margin-left: 65%;
+}
+
+#nova6 {
+  margin-top: 91%;
+  margin-left: 65%;
+}
+
+#nova2 {
+  margin-top: 104%;
+  margin-left: 52%;
+}
+
+#nova7 {
+  margin-top: 104%;
+  margin-left: 33.75%;
+}
+
+#nova3 {
+  margin-top: 91%;
+  margin-left: 21%;
+}
+
+#nova8 {
+  margin-top: 72.75%;
+  margin-left: 21%;
+}
+
+#nova4{
+  margin-top: 60%;
+  margin-left: 33.75%;
+}
+
 #start {
   display:block;
   z-index: 2;
@@ -173,14 +220,14 @@ display: block;
   border-radius: 5px; 
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
 }
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: .7; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
