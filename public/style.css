@@ -119,7 +119,7 @@ display: block;
 
 .supernova {
   width: 12.5%;
-  display: none;
+  display: block;
   position: fixed;
   z-index: 5;
 }
