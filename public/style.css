@@ -174,7 +174,7 @@ display: block;
   border-radius: 50%;
   border: 1px solid transparent;
   font-size: 40px;
-  background: greenyellow;
+  background: transparent;
   position:fixed; /*it can be fixed too*/
       left:0; right:0;
       top:5%; bottom:0;
