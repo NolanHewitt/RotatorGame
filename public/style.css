@@ -185,10 +185,8 @@ display: block;
 #sun {
   width: 34%;
   position: fixed;
-  left:0; right:0;
-      top:5%; bottom:0;
-  margin: auto;
-  margin-top: 50%;
+  margin-top: 53%;
+  margin-left: 32.5%;
 }
 
 #pointer {
