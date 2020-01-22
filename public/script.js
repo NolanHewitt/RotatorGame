@@ -22,6 +22,7 @@ if (typeof(Storage) !== "undefined") {
     // Retrieve
     highScore = localStorage.getItem("highScore");
     console.log(highScore);
+    document.getElementById("highscore").innerHTML = "High Score: " + highScore;
   } else {
     console.log("Sorry, your browser does not support Web Storage...");
   };
@@ -109,6 +110,9 @@ function gameTimer() {
          if (detector === true){
             points = points + 1;
             document.getElementById("score").innerHTML = "Score: " + points;
+            if (highScore <= points){
+                document.getElementById("highscore").innerHTML = "High Score: " + points;
+            };
             console.log("Points: " + points);
          }
          else if (detector === false){
