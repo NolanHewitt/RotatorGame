@@ -318,11 +318,11 @@ display: block;
   }
 
   #lost{
-    font-size: 250%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 22.5%; margin-top: 12.5%; color: white;
+    font-size: 250%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 32.5%; margin-top: 12.5%; color: white;
   }
   
   #return{
-    font-size: 150%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 12.5%; margin-top: 35%; color: black;
+    font-size: 150%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 22.5%; margin-top: 45%; color: black;
   }
   
   #stargate{
