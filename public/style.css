@@ -7,11 +7,13 @@ html, body {
 }
 
 #highscore{
-  font-size: 250%;
-  color: white;
-  position: fixed;
-  text-align: center;
-  margin-top: 160%;
+    font-size: 250%;
+    color: white;
+    position: fixed;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 160%;
 }
 
 #lost{
@@ -329,6 +331,8 @@ display: block;
     font-size: 250%;
     color: white;
     position: fixed;
+    display: block;
+    width: 100%;
     text-align: center;
     margin-top: 160%;
   }
