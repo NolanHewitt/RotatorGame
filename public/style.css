@@ -6,6 +6,15 @@ html, body {
   position: fixed;
 }
 
+#highscore{
+  font-size: 150%;
+  color: white;
+  position: fixed;
+  left:0; right:0;
+      top:0; bottom:0;
+      margin:auto;
+}
+
 #lost{
   font-size: 250%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 22.5%; margin-top: 12.5%; color: white;
 }
@@ -315,6 +324,14 @@ display: block;
     height: 100%;
     width: 100%;
     position: fixed;
+  }
+
+  #highscore{
+    font-size: 250%;
+    color: white;
+    position: fixed;
+    text-align: center;
+    margin-top: 160%;
   }
 
   #lost{
