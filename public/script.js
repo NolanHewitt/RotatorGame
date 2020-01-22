@@ -136,7 +136,7 @@ function gameTimer() {
                   } else {
                     console.log("Sorry, your browser does not support Web Storage...");
                   };
-                window.location='lose.html';
+                window.location='lose';
              };
          };
          document.getElementById("nova" + rng).style.display = "none";
