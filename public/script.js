@@ -19,7 +19,7 @@ if (typeof(Storage) !== "undefined") {
  // Retrieve
     highScore = localStorage.getItem("highScore");
     console.log(highScore);
-    if (highScore === "null"){
+    if (highScore === false){
         document.getElementById("highscore").innerHTML = "High Score: 0";
     }
     else{
