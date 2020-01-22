@@ -16,13 +16,15 @@ let waiting = 2000;
 
 function highScoreSet(){
 if (typeof(Storage) !== "undefined") {
-    // Store
-    // localStorage.setItem("highscore", points);
-
-    // Retrieve
+ // Retrieve
     highScore = localStorage.getItem("highScore");
     console.log(highScore);
-    document.getElementById("highscore").innerHTML = "High Score: " + highScore;
+    if (highScore === "null"){
+        document.getElementById("highscore").innerHTML = "High Score: 0";
+    }
+    else{
+        document.getElementById("highscore").innerHTML = "High Score: " + highScore;
+    };
   } else {
     console.log("Sorry, your browser does not support Web Storage...");
   };
