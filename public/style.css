@@ -484,13 +484,13 @@ display: block;
         left:0; right:0;
         top:5%; bottom:0;
     margin: auto;
-    margin-top: 67%;
+    margin-top: 62%;
   }
   
   #sun {
     width: 34%;
     position: fixed;
-    margin-top: 67%;
+    margin-top: 65%;
     margin-left: 32.1%;
   }
   
@@ -517,7 +517,7 @@ display: block;
   .slidecontainer {
     width: 60%; /* Width of the outside container */
     margin-left: 19%;
-    margin-top: 122.5%;
+    margin-top: 132.5%;
     position: fixed;
     display: block;
     z-index: 2;
