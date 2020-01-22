@@ -9,9 +9,25 @@ let angleMax = angleTarget + angleForgivness;
 let rng;
 let detector = false;
 let points = 0;
+let highScore;
 let mistakes = 3;
 let reaction = 3000;
 let waiting = 2000;
+
+function highScoreSet(){
+if (typeof(Storage) !== "undefined") {
+    // Store
+    // localStorage.setItem("highscore", points);
+
+    // Retrieve
+    highScore = localStorage.getItem("highScore");
+    console.log(highScore);
+  } else {
+    console.log("Sorry, your browser does not support Web Storage...");
+  };
+  return highScore;
+};
+highScoreSet();
 
 slider.oninput = function() {
   pointer.style.transform = "rotate(" + this.value + "deg)";
@@ -108,7 +124,15 @@ function gameTimer() {
                 document.getElementById("redX3").style.display = "block";
              }
              else if (mistakes === -1){
-                window.location='lose';
+                if (typeof(Storage) !== "undefined") {
+                    // Store
+                    if (highScore < points){
+                    localStorage.setItem("highScore", points);
+                    };
+                  } else {
+                    console.log("Sorry, your browser does not support Web Storage...");
+                  };
+                window.location='lose.html';
              };
          };
          document.getElementById("nova" + rng).style.display = "none";
