@@ -323,6 +323,9 @@ display: block;
   
   #return{
     font-size: 150%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 20%; margin-top: 57.5%; color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
   }
   
   #stargate{
