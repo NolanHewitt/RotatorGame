@@ -322,7 +322,7 @@ display: block;
   }
   
   #return{
-    font-size: 150%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 0%; margin-top: 14.5%; color: black;
+    font-size: 150%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: -0.5%; margin-top: 14.5%; color: black; border: transparent;
     height: 400px;
     width: 400px;
     border-radius: 50%;
