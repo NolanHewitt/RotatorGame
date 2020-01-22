@@ -515,7 +515,7 @@ display: block;
   }
   
   .slidecontainer {
-    width: 60%; /* Width of the outside container */
+    width: 75%; /* Width of the outside container */
     margin-left: 19%;
     margin-top: 142.5%;
     position: fixed;
